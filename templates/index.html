@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Home: Mo Crimes Mo Problems</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/jumbotron.css" rel="stylesheet">
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: #CDCDCD;
+        color:  #595959;
+        }
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index/">Mo Crime Mo Problems</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <!--Button Bar line-->
+			<!--<ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+		  </ul>-->
+
+			<form class="navbar-form navbar-right">
+			  <div class="form-group">
+              <!--User input social-->
+			  <input type="text" placeholder="First Name" class="form-control" id=first>
+              <input type="text" placeholder="Last Name" class="form-control" id=last>
+              <input type="text" placeholder="Enter License Number" class="form-control">
+            </div>
+			<!--User enter social-->
+            
+            <button type="reset" class="btn btn-success" onclick="location.href='http://mocrime.thomasruble.com/' + document.getElementById('first').value + '_' + document.getElementById('last').value + '/display_info'">Search</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron_custom">
+      <div class="container">
+        <!--Extra space-->
+        <p></p>
+        <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+		<!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Do you have a ticket?</h2>
+          <p>To see if you have a ticket or if you've lost a ticket you can search with your Driver's License Number in the search section above, for information on payment options, information on how to contest a ticket, or information on supervision click View Details  below. </p>
+          <p><a class="btn btn-default" href="/ticket_info/" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Warrants:</h2>
+          <p>Click View Details below to see if theres is currently a warrant out for your arrest, and how to proceed if there is. </p>
+          <p><a class="btn btn-default" href="/warrants_info/" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>More Info:</h2>
+          <p>Here you can find a court close to you using google maps.</p>
+          <p><a class="btn btn-default" href="/more_info/" role="button">Find A Court &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>Developers Developers Developers Developers  &copy; 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

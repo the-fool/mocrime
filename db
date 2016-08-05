@@ -1,0 +1,1 @@
+mysql -h crimelab.mocrime.thomasruble.com -u steveballmer -pdevelopers mocrime
